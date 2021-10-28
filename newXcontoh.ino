@@ -9,17 +9,6 @@ extern "C" {
 #include <user_interface.h>
 }
 
-//#ifdef ESP32
-//#include <WiFi.h>
-//#include <AsyncTCP.h>
-//#elif defined(ESP8266)
-//#include <ESP8266WiFi.h>
-//#include <ESPAsyncTCP.h>
-//#endif
-//#include <ESPAsyncWebServer.h>
-//
-//AsyncWebServer server(80);
-
 
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
@@ -47,9 +36,6 @@ IPAddress gateway(192, 168, 1, 1);   //IP Address of your WiFi Router (Gateway)
 IPAddress subnet(255, 255, 255, 0);  //Subnet mask
 IPAddress dns(8, 8, 4, 4);  //DNS
 
-//void notFound(AsyncWebServerRequest *request) {
-//  request->send(404, "text/plain", "Not found");
-//}
 
 //SETUP DMD
 #define DISPLAYS_WIDE 12 // Kolom Panel  // versi ini max 32
